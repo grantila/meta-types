@@ -5,6 +5,34 @@
 
 # API
 
+## Contents
+
+ - [Arithmetics](#arithmetics)
+   - [`Add<N1, N2>` adding numbers](#add)
+   - [`Sub<N1, N2>` subtracting numbers](#sub)
+   - [`Mul<N1, N2>` multiplying numbers](#mul)
+ - [Conditionals and comparisons](#conditionals-and-comparisons)
+   - [`If<If, Then, Else>` Conditionals](#conditional)
+   - [`Extends<T, E>` Type extends](#extends)
+   - [`GreaterThan<N1, N2>` greater-than comparison](#greaterthan)
+ - [Logics](#logics)
+   - [`And<B1, B2>`, `Or<B1, B2>`, `Xor<B1, B2>` Logic (and, or, xor)](#logic-and-or-xor)
+   - [`Not<B>` logic invert](#not)
+ - [Variadics (tuples)](#variadics-tuples)
+   - [`Fill<N, T?>` construct a tuple of size N](#fill)
+   - [`First<...T>`, `Last<...T>` first and last tuple element](#first-last)
+   - [`Rest<...R>`, `ReverseRest<...R>` all but the first / last](#rest-reverserest)
+   - [`LargerThan<...T1, ...T2>`, `SameLength<...T1, ...T2>` tuple size comparison](#largerthan-samelength)
+   - [`LengthOf<...T>` length of tuple](#lengthof)
+   - [`Optional<...T1, ...T2>`, `OptionalFrom<...T, N>` make optional tuple elements](#optional)
+   - [`Overwrite<...T1, ...T2>` overwrite one tuple with another](#overwrite)
+   - [`Reverse<...T>` reverse the types in a tuple](#reverse)
+   - [`Shift<...T, N>` remove the first N elements in a tuple](#shift)
+   - [`Slice<...T, Start, End>` slice a tuple](#slice)
+   - [`Truncate<...T, N>` truncate a tuple](#truncate)
+   - [`UnionAll<...T1, T2>` union all tuple element types with a type](#union)
+
+
 ## Arithmetics
 
 The arithmetics in this library handles positive integers up to ~98, sometimes more.
@@ -88,7 +116,7 @@ type T3 = GreaterThan< 40, 42 >;       // T3 is false; 40 < 42
 import type { And, Or, Xor } from 'meta-types'
 type T1 = And< true, false >; // T1 is false, {true && false} -> false
 type T2 = Or<  true, false >; // T2 is true, {true || false} -> true
-type T2 = And< true, false >; // T3 is true, {true ^ false} -> true
+type T2 = Xor< true, false >; // T3 is true, {true ^ false} -> true
 ```
 
 
