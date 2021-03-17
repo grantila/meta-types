@@ -28,7 +28,7 @@
    - [`Overwrite<...T1, ...T2>` overwrite one tuple with another](#overwrite)
    - [`Reverse<...T>` reverse the types in a tuple](#reverse)
    - [`Shift<...T, N>` remove the first N elements in a tuple](#shift)
-   - [`Slice<...T, Start, End>` slice a tuple](#slice)
+   - [`Slice<...T, Start?, End?>` slice a tuple](#slice)
    - [`Truncate<...T, N>` truncate a tuple](#truncate)
    - [`UnionAll<...T1, T2>` union all tuple element types with a type](#union)
 

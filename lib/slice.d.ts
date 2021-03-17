@@ -1,5 +1,6 @@
 import type { Shift } from './shift'
-import type { Truncate, TruncateLastIfSameSize } from './truncate'
+import type { Add } from './add'
+import type { Truncate } from './truncate'
 
 
 /**
@@ -10,12 +11,12 @@ import type { Truncate, TruncateLastIfSameSize } from './truncate'
 export type Slice
 	<
 		T extends readonly unknown[ ],
-		Start extends number,
+		Start extends number = 0,
 		End extends number = -1,
 		Inclusive = false,
 	> =
 		End extends -1
 		? Shift< T, Start >
 		: Inclusive extends true
-		? Shift< Truncate< T, End >, Start >
-		: Shift< TruncateLastIfSameSize< Truncate< T, End >, End >, Start >;
+		? Shift< Truncate< T, Add< End, 1 > >, Start >
+		: Shift< Truncate< T, End >, Start >;
