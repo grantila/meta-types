@@ -18,7 +18,7 @@
  - [Logics](#logics)
    - [`And<B1, B2>`, `Or<B1, B2>`, `Xor<B1, B2>` Logic (and, or, xor)](#logic-and-or-xor)
    - [`Not<B>` logic invert](#not)
- - [Variadics (tuples)](#variadics-tuples)
+ - [Tuples](#tuples)
    - [`Fill<N, T?>` construct a tuple of size N](#fill)
    - [`First<...T>`, `Last<...T>` first and last tuple element](#first-last)
    - [`Rest<...R>`, `ReverseRest<...R>` all but the first / last](#rest-reverserest)
@@ -131,7 +131,7 @@ type T = Not< false >; // T is true, !false
 ```
 
 
-## Variadics (tuples)
+## Tuples
 
 
 ### Fill

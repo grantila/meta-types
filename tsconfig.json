@@ -16,6 +16,6 @@
 	},
 	"include": [
 		"lib",
-		"index.ts"
+		"index.d.ts"
 	]
 }
