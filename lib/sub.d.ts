@@ -12,6 +12,8 @@ export type Sub< A extends number, B extends number > =
 	? 0
 	: B extends 1
 	? Sub1< A >
+	: B extends 0
+	? A
 	: SubTuples< Fill< A >, Fill< B > >;
 
 type SubTuples
