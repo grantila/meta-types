@@ -147,12 +147,20 @@ type T2 = Xor< true, false >; // T3 is true, {true ^ false} -> true
 
 ### Not
 
-Invert `true` or `false` using `Not`
+Invert `true` or `false` using `Not`.
 
 ```ts
 import type { Not } from 'meta-types'
 type F = Not< true >;  // F is false, !true
 type T = Not< false >; // T is true, !false
+```
+
+A second argument `Strict` can be provided, which defaults to `true`. If this is set to `false`, and [falsy](#isfalsy) type will return `true` instead of `never`.
+
+```ts
+import type { Not } from 'meta-types'
+type F = Not< 0 >;        // F is never, not exactly false
+type T = Not< 0, false >; // T is true, 0 is falsy
 ```
 
 
