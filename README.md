@@ -15,6 +15,7 @@
    - [`If<If, Then, Else>` Conditionals](#conditional)
    - [`Extends<T, E>` Type extends](#extends)
    - [`GreaterThan<N1, N2>` greater-than comparison](#greaterthan)
+   - [`Is< T, U >` compare equal types](#is)
    - [`IsFalsy< T >` is type falsy](#isfalsy)
  - [Logics](#logics)
    - [`And<B1, B2>`, `Or<B1, B2>`, `Xor<B1, B2>` Logic (and, or, xor)](#logic-and-or-xor)
@@ -104,6 +105,18 @@ import type { GreaterThan } from 'meta-types'
 type T1 = GreaterThan< 42, 40 >;       // T1 is true; 42 > 40
 type T2 = GreaterThan< 40, 40, true >; // T2 is true; 40 >= 40
 type T3 = GreaterThan< 40, 42 >;       // T3 is false; 40 < 42
+```
+
+
+### Is
+
+`Is` returns true for equal types.
+
+```ts
+import type { Is } from 'meta-types'
+type T1 = Is< 42, number >;      // T1 is false
+type T2 = Is< null, undefined >; // T2 is false
+type T3 = Is< "foo", "foo" >;    // T3 is true
 ```
 
 
