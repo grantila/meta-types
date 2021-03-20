@@ -1,6 +1,7 @@
 export * from './lib/add'
 export * from './lib/conditional'
 export * from './lib/extends'
+export * from './lib/falsy'
 export * from './lib/fill'
 export * from './lib/first'
 export * from './lib/greater-than'
