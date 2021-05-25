@@ -6,6 +6,6 @@
 		"noEmit": false
 	},
 	"exclude": [
-		"**/*.spec.ts"
+		"**/tests"
 	]
 }
