@@ -765,7 +765,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-conventional-changelog@npm:^3.1.0":
+"cz-conventional-changelog@npm:^3.3.0":
   version: 3.3.0
   resolution: "cz-conventional-changelog@npm:3.3.0"
   dependencies:
@@ -901,9 +901,9 @@ dts-critic@latest:
   languageName: node
   linkType: hard
 
-"dtslint@npm:^4.0.9":
-  version: 4.0.9
-  resolution: "dtslint@npm:4.0.9"
+"dtslint@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "dtslint@npm:4.2.1"
   dependencies:
     "@definitelytyped/header-parser": latest
     "@definitelytyped/typescript-versions": latest
@@ -919,7 +919,7 @@ dts-critic@latest:
     typescript: ">= 3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.7.0-dev || >= 3.8.0-dev || >= 3.9.0-dev || >= 4.0.0-dev"
   bin:
     dtslint: bin/index.js
-  checksum: 2f9cf0d45328227612fdc7c8b45949dfaa0fccdd0b11895fa01f3e0d00c3b09464c1ea7e18136f35edaf3368ff5463887301e2fb1c06424752e6ef70e8bfbced
+  checksum: 3af468a81c28c16c1629001fb392138c6a84a47b679f1628e9ef9429e9aa6e270796bd6b26a76489a3464155d87519427b4f32f90bb60a7ac7f39a97f61d40da
   languageName: node
   linkType: hard
 
@@ -1969,11 +1969,11 @@ dts-critic@latest:
   version: 0.0.0-use.local
   resolution: "meta-types@workspace:."
   dependencies:
-    cz-conventional-changelog: ^3.1.0
-    dtslint: ^4.0.9
+    cz-conventional-changelog: ^3.3.0
+    dtslint: ^4.2.1
     pre-commit: ^1.2.2
-    rimraf: ^3.0.2
-    typescript: ^4.2.4
+    rimraf: ^4.1.2
+    typescript: ^4.9.5
   languageName: unknown
   linkType: soft
 
@@ -2602,6 +2602,15 @@ dts-critic@latest:
   languageName: node
   linkType: hard
 
+"rimraf@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "rimraf@npm:4.1.2"
+  bin:
+    rimraf: dist/cjs/src/bin.js
+  checksum: 480b8147fd9bcbef3ac118f88a7b1169c3872977a3411a0c84df838bfc30e175a394c0db6f9619fc8b8a886a18c6d779d5e74f380a0075ecc710afaf81b3f50c
+  languageName: node
+  linkType: hard
+
 "run-async@npm:^2.2.0":
   version: 2.4.1
   resolution: "run-async@npm:2.4.1"
@@ -3166,23 +3175,23 @@ dts-critic@latest:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.2.4":
-  version: 4.2.4
-  resolution: "typescript@npm:4.2.4"
+"typescript@npm:^4.9.5":
+  version: 4.9.5
+  resolution: "typescript@npm:4.9.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 89c397df192f239359ad798b96d8e8d552e12c0c189ac5676cec4c20c410d6eec636b8e59a88f2aef0a56d961a9678d99c400099be9b7cae2f7b062eb4b7b171
+  checksum: ee000bc26848147ad423b581bd250075662a354d84f0e06eb76d3b892328d8d4440b7487b5a83e851b12b255f55d71835b008a66cbf8f255a11e4400159237db
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.2.4#~builtin<compat/typescript>":
-  version: 4.2.4
-  resolution: "typescript@patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=701156"
+"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
+  version: 4.9.5
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: eb86e0e8022e5297f7a7b871b6edfbf33b57049416ada8bf97c358760125c7c79f074fbebd1b8e8230f858ae05eb22ad0e805e8f6acd5eae1fa886681624c15e
+  checksum: 2eee5c37cad4390385db5db5a8e81470e42e8f1401b0358d7390095d6f681b410f2c4a0c496c6ff9ebd775423c7785cdace7bcdad76c7bee283df3d9718c0f20
   languageName: node
   linkType: hard
 
